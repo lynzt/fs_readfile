@@ -1,6 +1,6 @@
 {
-  "name": "js_fs_readfile_info",
-  "version": "0.0.2",
+  "name": "fs_readfile",
+  "version": "0.0.3",
   "description": "promisify fs readfile and return additional info on file",
   "author": "lynzt",
   "directories": {
