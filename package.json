@@ -7,9 +7,6 @@
     "type": "git",
     "url": "http://github.com/lynzt/fs_readfile.git"
   },
-  "directories": {
-    "test": "test"
-  },
   "main": "lib/read_file.js",
   "scripts": {
     "pretest": "docker build -t node/read_file_tests .",
