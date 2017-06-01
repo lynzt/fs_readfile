@@ -11,19 +11,7 @@ RUN cd $(npm root -g)/npm \
  && npm install fs-extra \
  && sed -i -e s/graceful-fs/fs-extra/ -e s/fs\.rename/fs.move/ ./lib/utils/rename.js
 
-
-RUN mkdir -p /dist/node_modules
-RUN cp -r node_modules/* /dist/node_modules/
-ENV NODE_PATH /dist/node_modules
-ENV NODE_PATH /dist/node_modules
-
 # bundle source
 COPY . /usr/src/app
 
-RUN which node
-run node -v
-run which npm
-run npm -v
-
-EXPOSE 3040
 CMD ["npm", "start"]
