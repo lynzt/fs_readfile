@@ -1,11 +1,12 @@
 {
   "name": "fs_readfile",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "promisify fs readfile and return additional info on file",
   "author": "lynzt",
   "directories": {
     "test": "test"
   },
+  "main": "lib/read_file.js",
   "scripts": {
     "pretest": "docker build -t node/read_file_tests .",
     "run": "docker run -p 4000:3000 node:6-onbuild --rm -t -i -v $PWD:/usr/src/app",
